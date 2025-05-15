@@ -14,6 +14,11 @@
       "mohdradzee\\WatiNotification\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+        "mohdradzee\\WatiNotification\\Tests\\": "tests/"
+    }
+  },
   "extra": {
     "laravel": {
       "providers": [
@@ -26,5 +31,9 @@
     "illuminate/notifications": "^10.0",
     "illuminate/support": "^10.0",
     "guzzlehttp/guzzle": "^7.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.36",
+    "phpunit/phpunit": "^10.5"
   }
 }
