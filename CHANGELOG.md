@@ -9,6 +9,11 @@ Manual Application version info: Update customization version number in platform
 
 ## [Unreleased]
 
+## [1.0.2] - 2025-05-23
+
+### Added
+- Callback
+
 ## [1.0.1] - 2025-05-10
 
 ### Changed

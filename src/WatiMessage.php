@@ -9,6 +9,7 @@ class WatiMessage
     public string $broadcast_name;
     public array $parameters = [];
     public array $meta = [];
+    protected $callback;
 
     public static function create(): self
     {
@@ -49,6 +50,17 @@ class WatiMessage
     {
         $this->meta = $meta;
         return $this;
+    }
+
+    public function withCallback(callable $callback): self
+    {
+        $this->callback = $callback;
+        return $this;
+    }
+
+    public function getCallback(): ?callable
+    {
+        return $this->callback;
     }
 
     public function toArray(): array
