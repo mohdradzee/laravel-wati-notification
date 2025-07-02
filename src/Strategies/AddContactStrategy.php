@@ -25,11 +25,11 @@ class AddContactStrategy implements WatiApiStrategy
         ])->post($url, $payload);
 
         if (!$response->successful()) {
-
             \Log::error("[WATI] Failed to add contact: " . $response->body());
+            throw new \Exception('WATI add_contact request failed');
         }
 
-        return ['response'=>$response->json()];
+        return ['response' => $response->json()];
     }
 
     protected function formatCustomParams(array $params): array

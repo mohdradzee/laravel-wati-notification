@@ -9,6 +9,11 @@ Manual Application version info: Update customization version number in platform
 
 ## [Unreleased]
 
+## [1.0.3] - 2025-05-24
+
+### Added
+- Trigger `NotificationFailed` event when WATI API request fails
+
 ## [1.0.2] - 2025-05-23
 
 ### Added

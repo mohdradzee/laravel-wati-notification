@@ -12,6 +12,7 @@ Send WhatsApp notifications via [WATI API](https://docs.wati.io) using Laravel's
 - Built-in support for multiple WATI API actions
 - Clean, elegant API (`$user->notify(...)`)
 - Easily extendable for new WATI endpoints
+- Emits Laravel's `NotificationFailed` event on HTTP failures
 
 ---
 
